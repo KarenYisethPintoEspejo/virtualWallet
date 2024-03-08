@@ -11,6 +11,7 @@
     --color-secundary: #33404F;
     --color-ternario: #fff;
     --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.216);
+    --color-icon:#fff;
 }
 [data-card]::before{
     content: attr(data-card);
