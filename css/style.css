@@ -5,3 +5,138 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+.banner{
+    background: var(--color-secundary);
+    position: absolute;
+    z-index: -10;
+}
+.banner img{
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+
+    
+}
+.profile{
+    /* background: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px
+
+
+}
+
+.profile__balance{
+    /* background: green; */
+    display: flex; 
+    flex-direction: column;
+    text-transform: capitalize;
+    color: var(--color-ternario)
+
+}
+
+.profile__title{
+  /* background: blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  color:var(--color-ternario);
+
+
+}
+
+.profile__title h3{
+    font-size: 2.3em;
+    font-family: "SF-Pro-Text-heavy"
+}
+.profile__title p{
+    font-size: 2.3em;
+    font-family: "SF-Pro-Text-Regular";
+}
+.profile__process{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+    color: var(--color-ternario);
+
+}
+.profile__savings, .profile__assets{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__savings progress[value]{
+    --color:var(--color-primary);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+.profile__assets progress[value]{
+    --color: var(--color-cuatro);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+progress[value]{
+    appearance: none;
+    border: none;
+    height: 5em;
+    border-radius: 10em;
+}
+
+.profile__savings progress[value]::-webkit-progress-bar,
+.profile__assets progress[value]::-webkit-progress-bar{
+    border-radius: 10em;
+    height: 5em;
+    background: var(--background);
+
+}
+progress[value]::-webkit-progress-value{
+    border-radius: 10em;
+    background: var(--color);
+}
+progress[valure]::-moz-progress-bar{
+    border-radius: 10em;
+    background: vas(--color);
+}
+.activities__title h3{
+
+ font-size: 1.4rem;
+ text-transform: capitalize;
+ font-family: "SF-Pro-Text-Bold"
+}
+.profile__activities{
+    background: darkmagenta;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 50px;
+    height: 85vh;
+}
+.activities__carusel__card{
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+    margin: auto;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+
+}
+.activities__carusel__img{
+    min-width: 30%;
+    min-height: 19vh;
+    background: var(--color-ternario);
+    border-radius: 10px;
+    box-shadow: var(--color-shado-transparent);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
