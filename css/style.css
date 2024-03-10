@@ -5,138 +5,257 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
 .banner{
     background: var(--color-secundary);
     position: absolute;
     z-index: -10;
 }
+
 .banner img{
     width: 100%;
     height: 120vh;
     object-fit: cover;
-
-    
 }
+
 .profile{
-    /* background: red; */
+  
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px
-
-
+    padding: 0px;
+    gap: 20px;
 }
+
+
+
+.profile__activities{
+    background: var(--color-ternario);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 10px;
+    bottom: 50px;
+    height: 100vh;
+}
+
+/* .profile__activities:active{
+    height: 85vh;
+} */
 
 .profile__balance{
     /* background: green; */
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    text-transform: capitalize;
-    color: var(--color-ternario)
-
+    gap: 15px;
+    padding: 10px;
 }
 
-.profile__title{
-  /* background: blue; */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-transform: capitalize;
-  color:var(--color-ternario);
-
-
+.profile__titule{
+    /* background: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform:  capitalize;
+    color: var(--color-ternario);
+}
+.profile__titule h3{
+    font-size: 2em;
+    font-family: "SF-Pro-Text-Heavy.otf";
 }
 
-.profile__title h3{
-    font-size: 2.3em;
-    font-family: "SF-Pro-Text-heavy"
-}
-.profile__title p{
+.profile__titule p{
     font-size: 2.3em;
     font-family: "SF-Pro-Text-Regular";
 }
+
 .profile__process{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
     color: var(--color-ternario);
-
 }
+
 .profile__savings, .profile__assets{
-    width: 45%;
     display: flex;
     flex-direction: column;
+    width: 45%;
 }
 
-.profile__savings progress[value]{
-    --color:var(--color-primary);
+.profile__savings small,
+.profile__assets small{
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.profile__savings label,
+.profile__assets label{
+    font-family: "SF-Pro-Text-Semibold";
+    font-size: 1.3em;
+}
+
+.profile__savings progress,
+.profile__assets progress{
+    width: 100%;
+}
+
+.profile__savings progress[value] {
+    --color: var(--color-primary);
     --background: var(--color-ternario);
     background: var(--background);
 }
 
-.profile__assets progress[value]{
-    --color: var(--color-cuatro);
+.profile__assets progress[value] {
+    --color: var(--color-cuarto);
     --background: var(--color-ternario);
     background: var(--background);
 }
 
-progress[value]{
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     border: none;
-    height: 5em;
+    height: .5em;
     border-radius: 10em;
 }
 
 .profile__savings progress[value]::-webkit-progress-bar,
-.profile__assets progress[value]::-webkit-progress-bar{
+.profile__assets progress[value]::-webkit-progress-bar {
     border-radius: 10em;
-    height: 5em;
+    height: .5em;
     background: var(--background);
-
 }
-progress[value]::-webkit-progress-value{
+
+progress[value]::-webkit-progress-value {
     border-radius: 10em;
     background: var(--color);
 }
-progress[valure]::-moz-progress-bar{
-    border-radius: 10em;
-    background: vas(--color);
-}
-.activities__title h3{
 
- font-size: 1.4rem;
- text-transform: capitalize;
- font-family: "SF-Pro-Text-Bold"
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
 }
-.profile__activities{
-    background: darkmagenta;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px 10px;
-    position: absolute;
-    bottom: 50px;
-    height: 85vh;
+
+*************************************************************************
+
+.activities__title h3,
+.transactions__title h3{
+    background: olive;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-family: "SF-pro-Text-Bold";
 }
-.activities__carusel__card{
+
+
+
+.activities__carusel__card {
     width: 95vw;
     display: flex;
     flex-direction: row;
-    overflow-x:scroll;
+    overflow-x: scroll;
     margin: auto;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     margin: 15px 0;
-
 }
-.activities__carusel__img{
+
+.activities__carusel__img {
     min-width: 30%;
     min-height: 19vh;
     background: var(--color-ternario);
+    box-shadow: var(--color-shadow-transparent);
     border-radius: 10px;
-    box-shadow: var(--color-shado-transparent);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+    margin: 15px 0;
+}
 
+.activities__carusel__img small,
+.activities__carusel__img h4 {
+    position: absolute;
+}
+
+.activities__carusel__img i {
+    font-size: 2.5em;
+}
+
+.activities__carusel__img h4 {
+    bottom: 20px;
+}
+
+/* ***************************************************************** */
+
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transactions__balance{
+    /* background: red; */
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.transactions__carucel{
+    /* background: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions__description{
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transactions__up,
+.transactions__down{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    color: var(--color-primary);
+}
+
+.transactions__down{
+    color: var(--color-secundary);
+}
+
+.transactions__description i{
+    font-size: 1.8em;
+}
+
+
+
+.transactions__description div p,
+.transactions__value p{
+    font-family: "SF-Pro-Text-Semibold";
+    text-transform: capitalize;
+    
+}
+
+.transactions__description div small,
+.transactions__value small{
+    color: var(--color-cuarto);
+    font-family: "SF-Pro-Text-Light";
+    text-transform: capitalize;
 }
