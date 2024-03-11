@@ -138,7 +138,7 @@ progress[value]::-moz-progress-bar {
     background: var(--color);
 }
 
-*************************************************************************
+
 
 .activities__title h3,
 .transactions__title h3{
@@ -259,3 +259,36 @@ progress[value]::-moz-progress-bar {
     font-family: "SF-Pro-Text-Light";
     text-transform: capitalize;
 }
+.menu{
+    background: var(--color-secundary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a i{
+    font-size: 25px;
+    color: var(--color-icon);
+}
+
+.menu ul li a i:hover{
+    color: var(--color-primary);
+    transition: color .3s ease-in-out;
+}
+ 
