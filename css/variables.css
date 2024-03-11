@@ -7,11 +7,11 @@
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
 }
 :root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
-    --color-ternario: #fff;
-    --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.216);
-    --color-icon:#fff;
+    --color-primary: #5a0096;
+    --color-secundary: #fff;
+    --color-ternario: #000;
+    --color-shado-tranparent: #fff;
+    --color-icon:#5a0096;
 }
 [data-card]::before{
     content: attr(data-card);
