@@ -24,6 +24,7 @@
     grid-area: logo;
     gap: 10px;
 
+
 }
 .burger{
     grid-area: burger;
@@ -38,9 +39,9 @@
 }
 .logo h1{
     margin-top: 22px;
-    margin-left: 10px;
+    margin-left: 80px;
     color: var(--color-ternario);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     font-family:"SF-Pro-Text-Bold" ;
 
@@ -82,6 +83,8 @@
 }
 
 .banner__title {
+    margin-top: 10px;
+    margin-bottom: 0;
     padding: 10px;
     color:var(--color-ternario);
     font-size: 1.4rem;
@@ -100,7 +103,7 @@
     width: 92vw;
     height: 130px;
     overflow: hidden;
-    border: 1px solid var(--color-primary);
+    border: 3px solid var(--color-primary);
     display: flex;
     justify-content: center;
 
@@ -138,6 +141,10 @@
     border-radius: 100%;
 }
 
+.banner__close i{
+    background: var(--color-primary);
+}
+
 .banner__more {
     margin-top: 10px;
     border: none;
@@ -165,16 +172,15 @@
     margin: auto;
     align-items: center;
     gap: 5px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 .carusel__title h3{
     color: var(--color-ternario);
 }
 .carusel__img {
-    width: 190px;
-    height: 400px;
+    width: 180px;
+    height: 120px;
     position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,8 +191,9 @@
 }
 
 .carusel__img img {
-    width: 100%;
-    height: auto;
+    height: 300px;
+    width: 195px;
+    border: 10px solid var(--color-primary);
 }
 
 .carusel__content {
@@ -208,13 +215,9 @@
     right: -20px;
     margin: 0;
     padding: 30px;
-    color: var(--color-primary);
+    color: var(--color-price);
     font-size: 30px;
     text-transform: uppercase;
-}
-
-.carusel__content small,
-.carusel__content h2 {
     margin: 0;
     background: transparent;
     text-transform: uppercase;
@@ -246,11 +249,11 @@
 }
 .menu ul li a i{
     font-size: 25px;
-    color: var(--color-icon);
+    color: var(--color-primary);
 }
 
 .menu ul li a i:hover{
-    color: var(--color-primary);
+    color: var(--color-ternario);
     transition: color .3s ease-in-out;
 }
 
