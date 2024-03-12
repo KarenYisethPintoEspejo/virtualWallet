@@ -13,7 +13,7 @@
 }
 
 .banner img{
-    width: 100%;
+    width: 380px;
     height: 120vh;
     object-fit: cover;
 }
@@ -284,11 +284,12 @@ progress[value]::-moz-progress-bar {
 }
 .menu ul li a i{
     font-size: 25px;
-    color: var(--color-icon);
+    color: var(--color-primary);
 }
 
 .menu ul li a i:hover{
-    color: var(--color-primary);
+    color: var(--color-ternario);
     transition: color .3s ease-in-out;
 }
+
  
