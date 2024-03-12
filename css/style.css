@@ -19,7 +19,6 @@
 }
 
 .profile{
-  
     display: grid;
     grid-template-columns: 1fr;
     padding: 0px;
@@ -29,7 +28,7 @@
 
 
 .profile__activities{
-    background: var(--color-ternario);
+    background: var(--color-secundary);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px 10px;
@@ -55,17 +54,14 @@
     display: flex;
     flex-direction: column;
     text-transform:  capitalize;
-    color: var(--color-ternario);
 }
 .profile__titule h3{
+    color: var(--color-ternario);
     font-size: 2em;
     font-family: "SF-Pro-Text-Heavy.otf";
 }
 
-.profile__titule p{
-    font-size: 2.3em;
-    font-family: "SF-Pro-Text-Regular";
-}
+
 
 .profile__process{
     display: flex;
@@ -140,9 +136,9 @@ progress[value]::-moz-progress-bar {
 
 
 
-.activities__title h3,
+.activities__title h4,
 .transactions__title h3{
-    background: olive;
+    color: var(--color-ternario);
     font-size: 1.4rem;
     text-transform: capitalize;
     font-family: "SF-pro-Text-Bold";
