@@ -38,6 +38,8 @@
     gap: 10px;
 }
 .logo h1{
+    display: flex;
+    text-align: center;
     margin-top: 22px;
     margin-left: 80px;
     color: var(--color-ternario);
@@ -172,57 +174,32 @@
     margin: auto;
     align-items: center;
     gap: 5px;
+    margin-left: 10px;
     margin: 10px 0;
 }
 .carusel__title h3{
     color: var(--color-ternario);
 }
 .carusel__img {
-    width: 180px;
-    height: 120px;
+    width: 300px;
+    height: 195px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-ternario);
-    left: -20px;
+    left: 10px;
     bottom: 20px;
-}
-
-.carusel__img img {
-    height: 300px;
-    width: 195px;
+    background: var(--color-price);
     border: 10px solid var(--color-primary);
 }
 
-.carusel__content {
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
+.carusel__img img {
+    height: 30px;
+    width: 100px;
+ 
 }
-
-
-.carusel__content h2 {
-    position: absolute;
-    bottom: 0;
-    right: -20px;
-    margin: 0;
-    padding: 30px;
-    color: var(--color-price);
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 0;
-    background: transparent;
-    text-transform: uppercase;
-}
-
 
 .menu{
     background: var(--color-secundary);
