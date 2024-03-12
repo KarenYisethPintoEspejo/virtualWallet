@@ -13,7 +13,7 @@
 }
 
 .banner img{
-    width: 380px;
+    width: 385px;
     height: 120vh;
     object-fit: cover;
 }
@@ -193,6 +193,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .transactions__balance{
+    color: var(--color-ternario);
     /* background: red; */
     padding-top: 15px;
     display: flex;
