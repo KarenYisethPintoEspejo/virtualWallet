@@ -2,8 +2,11 @@
     font-family: "SF-Pro-Text-Regular";
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
 }
-:root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
-    --color-icon:#fff;
+:root{ 
+    --color-primary: #5a0096;
+    --color-secundary: #000;
+    --color-ternario: #fff;
+    --color-shado-tranparent: #fff;
+    --color-icon:#870096;
+    --color-price:#7d2eab;
 }
