@@ -54,6 +54,8 @@
     display: flex;
     flex-direction: column;
     text-transform:  capitalize;
+    margin-top: 18px;
+    font-size: 20px;
 }
 .profile__titule h3{
     color: var(--color-ternario);
@@ -76,23 +78,13 @@
     display: flex;
     flex-direction: column;
     width: 45%;
+    
 }
 
-.profile__savings small,
-.profile__assets small{
-    text-transform: uppercase;
-    font-size: .8em;
-    margin-bottom: 5px;
-}
-
-.profile__savings label,
-.profile__assets label{
-    font-family: "SF-Pro-Text-Semibold";
-    font-size: 1.3em;
-}
 
 .profile__savings progress,
 .profile__assets progress{
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -113,14 +105,15 @@ progress[value] {
     -moz-appearance: none;
     appearance: none;
     border: none;
-    height: .5em;
+    height: .9em;
     border-radius: 10em;
 }
 
 .profile__savings progress[value]::-webkit-progress-bar,
 .profile__assets progress[value]::-webkit-progress-bar {
+    border: 3px solid var(--color-secundary);
     border-radius: 10em;
-    height: .5em;
+    height: .9em;
     background: var(--background);
 }
 
@@ -161,7 +154,7 @@ progress[value]::-moz-progress-bar {
 .activities__carusel__img {
     min-width: 30%;
     min-height: 19vh;
-    background: var(--color-ternario);
+    background: var(--color-primary);
     box-shadow: var(--color-shadow-transparent);
     border-radius: 10px;
     background-size: contain;
@@ -172,8 +165,8 @@ progress[value]::-moz-progress-bar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: var(--color-secundary);
-    margin: 15px 0;
+    color: var(--color-ternario);
+    margin: 10px 0;
 }
 
 .activities__carusel__img small,
@@ -182,6 +175,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .activities__carusel__img i {
+    
     font-size: 2.5em;
 }
 
