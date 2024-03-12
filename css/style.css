@@ -7,8 +7,6 @@
     background-color: black;
 }
 
-
-
 .header{
 
     display: grid;
@@ -84,7 +82,7 @@
 
 .banner__title {
     padding: 10px;
-    color: black; /* Cambiar a un color válido */
+    color:var(--color-ternario);
     font-size: 1.4rem;
     text-transform: capitalize;
 }
@@ -152,7 +150,7 @@
 
 [data-card]::before {
     content: attr(data-card);
-    color: var(--color-secundary);
+    color: var(--color-ternario);
     font-family: "SF-Pro-Text-Bold";
 }
 
@@ -168,7 +166,9 @@
     gap: 5px;
     margin: 15px 0;
 }
-
+.carusel__title h3{
+    color: var(--color-ternario);
+}
 .carusel__img {
     width: 190px;
     height: 400px;
@@ -200,16 +200,22 @@
     text-align: center;
 }
 
-.carusel__content small{
-    
-    font-size: 14px;
+
+.carusel__content h2 {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    margin: 0;
+    padding: 30px;
+    color: var(--color-primary);
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 .carusel__content small,
 .carusel__content h2 {
     margin: 0;
     background: transparent;
-    color: var(--color-ternario);
     text-transform: uppercase;
 }
 
